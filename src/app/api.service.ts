@@ -9,6 +9,6 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   addProduct = (dataToSend: any) => {
-    this.http.post("http://localhost:8080/add", dataToSend);
+    return this.http.post("http://localhost:8080/add", dataToSend);
   }
 }
