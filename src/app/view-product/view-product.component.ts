@@ -9,6 +9,7 @@ import { ApiService } from '../api.service';
 })
 export class ViewProductComponent {
 
+
   constructor(private api: ApiService) {
     api.fetchCourse().subscribe(
       (response: any) => {
@@ -18,4 +19,5 @@ export class ViewProductComponent {
   }
 
   product: any = []
+
 }
