@@ -10,39 +10,39 @@
                 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Product Code</label>
-                    <input type="text" placeholder="title" class="form-control">
+                    <input name="productCode" [(ngModel)]="productCode" type="text" placeholder="title" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Name</label>
-                    <input placeholder="rate" class="form-control">
+                    <input name="name" [(ngModel)]="name" placeholder="rate" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Manfacturing Date</label>
-                    <input type="text" placeholder="seller name" class="form-control">
+                    <input name="manufacturingDate" [(ngModel)]="manufacturingDate" type="text" placeholder="seller name" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Expiry Date</label>
-                    <input placeholder="rate" class="form-control">
+                    <input name="expiryDate" [(ngModel)]="expiryDate" placeholder="rate" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Brand</label>
-                    <input placeholder="rate" class="form-control">
+                    <input name="brand" [(ngModel)]="brand" placeholder="rate" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Price</label>
-                    <input type="number" placeholder="quantity" class="form-control">
+                    <input name="price" [(ngModel)]="price" type="number" placeholder="quantity" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Seller Name</label>
-                    <input  type="text" placeholder="seller name" class="form-control">
+                    <input name="sellerName" [(ngModel)]="sellerName" type="text" placeholder="seller name" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Distributor Name</label>
-                    <input type="text" placeholder="seller name" class="form-control">
+                    <input name="distributorName" [(ngModel)]="distributorName" type="text" placeholder="seller name" class="form-control">
                 </div>
               
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-danger font-monospace py-1">Submit</button>
+                    <button (click)="readProduct()" class="btn btn-danger font-monospace py-1">Submit</button>
                 </div>
             </div>
         </div>
