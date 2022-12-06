@@ -8,7 +8,6 @@ import { ApiService } from '../api.service';
 })
 export class AddProductComponent {
 
-  
   constructor(private api: ApiService) { }
   
   productCode = ""
@@ -48,6 +47,5 @@ export class AddProductComponent {
       }
     )
   }
-
 
 }

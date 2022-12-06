@@ -21,9 +21,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr *ngFor="let i of product">
                                          
-                        <td></td>
+                        <td>{{i.productCode}}</td>
+                        <td>{{i.productName}}</td>
+                        <td>{{i.brand}}</td>
+                        <td>{{i.manDate}}</td>
+                        <td>{{i.expDate}}</td>
+                        <td>{{i.price}}</td>
+                        <td>{{i.sellerName}}</td>
+                        <td>{{i.distributorName}}</td>
+                    
                   
                     </tr>
                    
